@@ -15,5 +15,5 @@ mybatis:
   type-aliases-package: cn.jianml.mybatis.entity
   #¿ªÆôÍÕ·åÃüÃû
   configuration:
-    use-actual-param-name: false
+#    use-actual-param-name: false
     map-underscore-to-camel-case: true
