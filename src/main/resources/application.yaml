@@ -1,2 +1,19 @@
 server:
   port: 8080
+
+
+spring:
+  datasource:
+    username: study
+    password: 123456
+    url: jdbc:mysql://jianml.cn:3306/study?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  #mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.jianml.mybatis.entity
+  #开启驼峰命名
+  configuration:
+    use-actual-param-name: false
+    map-underscore-to-camel-case: true
